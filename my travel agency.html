@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Import Google Icon Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Import materialize.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+      integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Travel Website</title>
+  </head>
+
+  <body>
+    <!-- section navbar -->
+    <div class="navbar-fixed">
+      <nav class="blue">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#!" class="band-logo">My Travel Website</a>
+            <a href="#!" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#search">Search</a></li>
+              <li><a href="#popular">Popular Places</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#search">Search</a></li>
+      <li><a href="#popular">Popular Places</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- section:slider -->
+
+    <section class="slider">
+      <ul class="slides">
+        <li>
+          <img
+            src="https://source.unsplash.com/collection/view-of-tourist-resort-338504/"
+          />
+          <div class="caption center-align">
+            <h2>Take Your Dream Vacation</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Our name says it all, "Dream Vacations Start Here" because your
+              dream vacation begins from the moment you start planning.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://source.unsplash.com/collection/fun-hotel-palm-trees-person-261108/"
+          />
+          <div class="caption left-align">
+            <h2>We Work With All Budgets</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              So you want to create some great memories with your kids? If
+              that’s true, nothing comes to mind except spending some fun-filled
+              vacations with them.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://source.unsplash.com/collection/hotel-leisure-palm-trees-pool-261169/"
+          />
+          <div class="caption right-align">
+            <h2>Group And Individual Getaways</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Planning a group vacation? Our dedicated Group Sales Department
+              can arrange amazing experiences for any type of travel group
+              including academic, sports, music, incentive, cruise, and more.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://source.unsplash.com/collection/architecture-coconut-trees-fun-hotel-261234/"
+          />
+          <div class="caption center-align">
+            <h2>Contact Us From Anywere</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              We believe that planning the details of your trip can be as
+              enjoyable
+            </h5>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      //sidenav
+      const sideNav = document.querySelector(".sidenav");
+      M.Sidenav.init(sideNav, {});
+      //slider
+      const slider = document.querySelector(".slider");
+      M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+    </script>
+  </body>
+</html>
