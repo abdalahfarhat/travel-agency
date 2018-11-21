@@ -10,9 +10,6 @@ input {
 .material-icons {
   align-content: center;
 }
-section .slider {
-  background-attachment: fixed;
-}
 
 .section-follow .fa-4x {
   margin: 5px 10px;
