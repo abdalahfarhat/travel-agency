@@ -7,6 +7,26 @@
 input {
   border-radius: 50px;
 }
-.material-icons{
+.material-icons {
   align-content: center;
+}
+section .slider {
+  background-attachment: fixed;
+}
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
+.fa-4x:hover {
+  color: #eece1a;
+  transition: ease-in 0.7s;
+}
+.card-panel:hover {
+  background: #eece1a;
+  transition: ease-in 0.5s;
+}
+.input-field input[type="text"] {
+  border-bottom: 1px solid #2196f3;
+  box-shadow: 0 1px 0 0 #2196f3;
+  color: #2196f3;
 }
